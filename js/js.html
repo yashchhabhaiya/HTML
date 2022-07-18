@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Demo jS</title>
+    <link rel="stylesheet" href="css/demojs.css" />
+    <link href="js/demojs.js" />
+    <script>
+      function colorbody() {
+        document.body.style.backgroundColor=document.getElementById("colorbody").value;
+      }
+      function colordiv() {
+        document.getElementById("mdiv").style.backgroundColor =
+        document.getElementById("colordiv").value;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="mdiv" class="mdiv"></div>
+    <br />
+    <button id="alert" onclick="alert('hello')">Alert</button>
+    <br />
+    <hr />
+    <button id="confirm" onclick="confirm()">Confirm</button>
+    <br />
+    <hr />
+    <button id="prompt" c onclick="prompt()">Prompt</button>
+    <br />
+    <hr />
+    <input type="color" id="colordiv" onchange=colordiv() />Div bg color
+    <br />
+    <hr />
+    <input type="color" id="colorbody" onchange=colorbody() />
+  </body>
+</html>

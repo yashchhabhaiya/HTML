@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Demo jS</title>
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link href="js/gallery.js" />
+    <script type="text/javascript">
+        function myfun(imgs){
+            var expandimg = document.getElementById("expandimg");
+            expandimg.src = imgs.src;
+        }
+    </script>
+  </head>
+  <body>
+    <div class="clear">
+        <button id="show" onclick="document.getElementById('details').style.color='red'">Style</button>
+        <button id="show" onclick="document.getElementById('details').innerHTML='Hello Student';">Show</button>
+        <button id="hide" onclick="document.getElementById('details').innerHTML='';">Hide</button>
+        <h2 id="details">Hello </h2>
+  
+    <div class="row">
+        <div class="column">
+            <img src="img/download (1).jpg" alt="Gallery photo 1" onclick="myfun(this)">
+            <img src="img/download (2).jpg" alt="Gallery photo 2" onclick="myfun(this)">
+            <img src="img/download.jpg" alt="Gallery photo 3" onclick="myfun(this)">
+            <img src="img/images.jpg" alt="Gallery photo 4" onclick="myfun(this)">
+        </div>
+    </div>
+    <center>
+    <div class="container">
+        <img id="expandimg" style="width: 400px; height: 300px">
+        
+    </div>
+</center>
+    </body>
+</html>
